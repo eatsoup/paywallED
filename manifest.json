@@ -1,0 +1,14 @@
+{
+    "name": "paywallED",
+    "version": "1.0",
+    "description": "We don't like walls",
+    "manifest_version": 2,
+
+    "content_scripts": [
+        {
+            "matches": ["https://*.ed.nl/*"],
+            "js": ["dewall.js"]
+        }
+    ]
+}
+
