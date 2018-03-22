@@ -6,7 +6,7 @@
 
     "content_scripts": [
         {
-            "matches": ["https://*.ed.nl/*"],
+            "matches": ["https://*.ed.nl/*", "https://*.ad.nl/", "https://*.bd.nl/", "https://*.tubantia.nl/", "https://*.bndestem.nl/", "https://*.pzc.nl/", "https://*.destentor.nl/", "https://*.degelderlander.nl/"],
             "js": ["dewall.js"]
         }
     ]

@@ -3,7 +3,11 @@ function generateNewCookie(){
     var randomString = btoa(randomNumber);
     return randomString;
 }
+function getHostName(){
+    var hostName = window.location.host.replace('www','')
+    return hostName;
+}
 function setRandomCookie(){
-    document.cookie = 'temptationTrackingId=' + generateNewCookie() + ';domain=.ed.nl' + ";path=/";
+    document.cookie = 'temptationTrackingId=' + generateNewCookie() + ';domain=' + getHostName() + ";path=/";
 }
 setRandomCookie();
