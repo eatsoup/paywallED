@@ -1,14 +1,25 @@
 {
-    "name": "paywallED",
-    "version": "1.0",
-    "description": "We don't like walls",
-    "manifest_version": 2,
-
-    "content_scripts": [
-        {
-            "matches": ["https://*.ed.nl/*", "https://*.ad.nl/", "https://*.bd.nl/", "https://*.tubantia.nl/", "https://*.bndestem.nl/", "https://*.pzc.nl/", "https://*.destentor.nl/", "https://*.degelderlander.nl/"],
-            "js": ["dewall.js"]
-        }
-    ]
+  "manifest_version": 2,
+  "name": "PaywallED",
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "id": "admin@localhost"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.ed.nl/*", 
+        "https://*.ad.nl/*", 
+        "https://*.bd.nl/*", 
+        "https://*.tubantia.nl/*", 
+        "https://*.bndestem.nl/*", 
+        "https://*.pzc.nl/*", 
+        "https://*.destentor.nl/*", 
+        "https://*.degelderlander.nl/*"
+      ],
+      "js": ["dewall.js"]
+    }
+  ]
 }
-
